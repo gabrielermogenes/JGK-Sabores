@@ -1,0 +1,159 @@
+body{
+  background-image: url(../Design\ sem\ nome\ \(5\).png);
+    background-repeat: no-repeat;
+}
+
+
+.pag {
+  background-color: white;
+  border-radius: 34px;
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+  height: 700px;
+  justify-content: flex-start; 
+  align-items: center;
+  margin: 100px auto;
+  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url(../Design\ sem\ nome\ \(18\).png);
+  background-repeat: no-repeat;
+  
+}
+
+.pag:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px #EB9123;
+}
+
+.titulo {
+  margin-top: -31px; 
+}
+
+#tit {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #d4a373;
+}
+
+#conteudo{
+  padding: 30px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 110px;
+} 
+#pedido-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  padding: 20px;
+  border-radius: 32px;
+  width: 400px; 
+  max-width: 700px; 
+  margin: 0 auto; 
+  font-family: 'Arial', sans-serif;
+  color: #ff5e00cc; 
+  height: 500px;
+}
+
+
+#pedido-form label {
+  font-size: 26px;
+  font-weight: bold;
+  color: #d4a373;
+  margin-bottom: 3px;
+  margin-top: 160px;
+}
+
+
+#pedido-form select,
+#pedido-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+ 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pedido-form select:focus,
+#pedido-form input[type="number"]:focus {
+  border-color: #d4a373; 
+  box-shadow: 0 0 5px rgba(212, 163, 115, 0.5);
+  outline: none;
+   pointer-events: none; 
+}
+
+
+#pedido-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d4a373;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#pedido-form button:hover {
+  
+  transform: scale(1.05); 
+ 
+  box-shadow: 0 8px 15px #0000003d;
+}
+
+.quantidade-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantidade-container input {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+
+
+.quantidade-container button {
+  width: 40px;
+  height: 40px;
+  font-size: 8px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d4a373;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantidade-container button:hover {
+  background-color: #b08363;
+}
+
+.quantidade-container button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  #pedido-form {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  #pedido-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

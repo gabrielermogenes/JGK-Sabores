@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGK Sabores</title>
+    <link rel="shortcut icon" href="../logo teste.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Style/cardapio.css">
+    <link rel="stylesheet" href="../Style/pix.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> JGK Sabores</i>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html">Início</a></li>
+                <li class="nav-item"><a href="../Outras Pages/produtos.html">Cardápio</a></li>
+            </ul>
+            <button class="btn1">Compre Aqui</button>
+        </nav>
+    </header>
+
+    <div class="pag">
+        <div class="titulo">
+            <h1 id="tit">Escolha O Sabor</h1>
+        </div>
+        <div id="conteudo">
+            <form id="pedido-form">
+                <select id="sabor" name="sabor">
+                    <option value="" disabled selected>Selecione um sabor</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="baunilha">Baunilha</option>
+                    <option value="morango">Morango</option>
+                </select>
+            
+                <label for="quantidade">Quantidade:</label>
+                <div class="quantidade-container">
+                    <button type="button" id="decremento">-</button>
+                    <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10" readonly />
+                    <button type="button" id="incremento">+</button>
+                </div>
+            
+                <button type="button" id="confirmar-pedido">Confirmar Pedido</button>
+            </form>
+            
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

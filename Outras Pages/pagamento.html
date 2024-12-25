@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGK Sabores</title>
+    <link rel="shortcut icon" href="../logo teste.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/home.css">
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="../Style/qr.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_logo"> JGK Sabores</i>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html">Início</a></li>
+                <li class="nav-item"><a href="../Outras Pages/produtos.html">Cardápio</a></li>
+            </ul>
+            <button class="btn1">Compre Aqui</button>
+        </nav>
+    </header>
+
+    <div class="cnt">
+        <h1 class="til">Resumo do Pedido</h1>
+        <p id="pedido-resumo" class="resumo"></p>
+
+        <div class="qr-code">
+            <img id="qr-code-img" src="../img-dish/impqr.jpeg.png"  alt="QR Code do PIX" >
+        </div>
+
+        <p>Chave PIX: <span id="chave-pix">123e4567-e89b-12d3-a456-426614174000</span></p>
+        <button id="copiar-chave">Copiar Chave PIX</button>
+    </div>
+
+    <script>
+        // Script para preencher o resumo do pedido e permitir copiar a chave PIX
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sabor = urlParams.get('sabor');
+            const quantidade = urlParams.get('quantidade');
+            const precoUnitario = 4.00; // Preço fixo do produto
+            const total = (quantidade * precoUnitario).toFixed(2);
+
+            // Exibe o resumo do pedido
+            const pedidoResumo = document.getElementById('pedido-resumo');
+            pedidoResumo.textContent = `Você escolheu ${quantidade} unidade(s) do sabor ${sabor}. Total: R$ ${total}`;
+
+            // Função para copiar a chave PIX
+            const copiarBtn = document.getElementById('copiar-chave');
+            copiarBtn.addEventListener('click', () => {
+                const chavePix = document.getElementById('chave-pix').textContent;
+                navigator.clipboard.writeText(chavePix).then(() => {
+                    alert('Chave PIX copiada com sucesso!');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+
+#home{
+    display: flex;
+    min-height: calc(100vh - 90px);
+    position: relative;
+   background-color: #FCF7DC;
+    overflow: hidden; 
+  
+    background-image: url(../Design\ sem\ nome\ \(4\).png);
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 10%;
+      
+}
+
+#cta .title{
+    
+    font-size: 4em;
+    color: #1d1d1d;
+}
+
+#cta .title span{
+    color: #CF9134;
+}
+
+#cta .description{
+    font-size: 1.4rem;
+}
+
+#cta_buttons {
+ display: flex;
+ gap: 24px;
+}
+
+
+
+#cta_buttons a {
+    text-decoration:
+    none;
+    color: #ffffff;
+}
+
+.btn1:hover{
+    background-color:#d68b1b;
+}
+#banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 50%; 
+    z-index: 2;
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 178px;
+    left: 566px;
+    
+}
+
+
+
+#banner img {
+    max-width: 100%; 
+    height: 650px; 
+    object-fit: cover; 
+    z-index: 2; 
+    position: relative;
+}
+
+
+
+
