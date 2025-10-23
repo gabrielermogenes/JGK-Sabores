@@ -42,3 +42,24 @@ A proposta é **simplificar o processo de pedido**, **reduzir filas** e tornar a
 1. Clone este repositório:
    ```bash
    git clone https://github.com/gabrielermogenes/JGK-Sabores.git
+
+## 🖼️ Prévia 
+
+<img width="1917" height="895" alt="image" src="https://github.com/user-attachments/assets/e30d32f8-1ac2-4cd3-a75c-422f7ffbd3d5" />
+
+
+## 🤝 Contribuições
+
+Sinta-se à vontade para contribuir com melhorias!
+
+Faça um fork do projeto
+
+Crie uma branch:
+
+git checkout -b feature/nome-da-feature
+
+---
+
+Faça commits claros e objetivos
+
+Envie um Pull Request
